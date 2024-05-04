@@ -6,6 +6,7 @@ export default {
   ],  theme: {
     fontSize : {
       'hero-title' : '80px',
+      'section-title' : '64px',
       sm: '0.8rem',
       base: '1rem',
       xl: '1.25rem',

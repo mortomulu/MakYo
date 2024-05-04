@@ -1,5 +1,5 @@
-import Mak from "../../assets/Mak.png"
-import Yo from "../../assets/Yo.png"
+import Mak from "../../../assets/Mak.png"
+import Yo from "../../../assets/Yo.png"
 
 export default function Logo (){
     return (

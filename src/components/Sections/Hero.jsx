@@ -1,6 +1,6 @@
-import HeroContent from "../Fragments/HeroContent";
-import Logo from "../Fragments/Logo";
-import Navbar from "../Fragments/Navbar";
+import HeroContent from "../Fragments/Hero/HeroContent";
+import Logo from "../Fragments/Hero/Logo";
+import Navbar from "../Fragments/Hero/Navbar";
 import poster from "../../assets/poster.png";
 
 const Hero = () => {
