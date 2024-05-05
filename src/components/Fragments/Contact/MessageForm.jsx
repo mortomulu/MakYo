@@ -1,20 +1,14 @@
-import { Formik, Field, ErrorMessage, Form } from "formik";
+import { useFormik, Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 
 export default function MessageForm() {
-  const handleSubmit = (values) => {
-    console.log("name : ", values.name);
-    console.log("email : ", values.email);
-    console.log("message : ", values.message);
-  };
-
   const defaultBorder =
-    "mt-3 border-2 border-border-color rounded w-[323px] h-[38px]";
+    "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[38px] md:w-[185px] sm:w-[400px]";
   const defaultBordertextArea =
-    "mt-3 border-2 border-border-color rounded w-[323px] h-[100px]";
-  const errorBorder = "mt-3 border-2 border-red-500 rounded w-[323px] h-[38px]";
+    "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[100px] md:w-[185px] sm:w-[400px]";
+  const errorBorder = "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] h-[38px]";
   const errorBordertextArea =
-    "mt-3 border-2 border-red-500 rounded w-[323px] h-[100px]";
+    "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] h-[100px]";
 
   return (
     <div>
@@ -31,12 +25,18 @@ export default function MessageForm() {
             .required("required"),
           message: Yup.string().required("required"),
         })}
-        onSubmit={handleSubmit}
+        onSubmit={(values, { resetForm }) => {
+          console.log("name : ", values.name);
+          console.log("email : ", values.email);
+          console.log("message : ", values.message);
+
+          resetForm();
+        }}
       >
-        {({ isSubmitting }) => (
+        {() => (
           <Form className="w-fit">
             <div className="flex-col flex">
-              <label className="text-2xl font-lexend-deca" htmlFor="name">
+              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="name">
                 Name
               </label>
               <Field type="text" name="name">
@@ -49,7 +49,7 @@ export default function MessageForm() {
               </Field>
             </div>
             <div className="flex-col flex">
-              <label className="text-2xl font-lexend-deca" htmlFor="email">
+              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="email">
                 Email
               </label>
               <Field type="text" name="email">
@@ -62,7 +62,7 @@ export default function MessageForm() {
               </Field>
             </div>
             <div className="flex-col flex">
-              <label className="text-2xl font-lexend-deca" htmlFor="message">
+              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="message">
                 Massage
               </label>
               <Field type="text" name="message">

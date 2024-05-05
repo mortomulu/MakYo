@@ -1,4 +1,4 @@
-import Contacts from "../components/Sections/Contact";
+import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 import Hero from "../components/Sections/Hero";
 import Products from "../components/Sections/Products";
@@ -10,7 +10,7 @@ export default function LandingPage() {
       <Hero />
       <WhyChooseUs />
       <Products />
-      <Contacts/>
+      <Contact/>
       <Footer/>
     </div>
   );

@@ -1,11 +1,11 @@
 import Mak from "../../../assets/Mak.png"
 import Yo from "../../../assets/Yo.png"
+import logo from "../../../assets/logo.png"
 
 export default function Logo (){
     return (
-        <div className="w-[213px] h-[73] flex ml-44">
-            <img className="" src= {Yo} alt="mak" />
-            <img className="ml-[-210px]" src= {Mak} alt="mak" />
+        <div className="flex lg:ml-16 sm:ml-16">
+            <img className="lg:w-[213px] md:w-[150px] sm:w-[140px] " src={logo} alt="" />
         </div>
     )
 }

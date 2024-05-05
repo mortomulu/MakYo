@@ -25,9 +25,9 @@ export default function Products() {
 
 
   return (
-    <div className="w-full py-28 px-32">
+    <div className="w-full py-28 xl:px-32 lg:px-24 sm:px-24">
       <TitleSection title={"See Our Product"} />
-      <div className="mt-24 flex justify-between">
+      <div className="lg:mt-24 md:mt-20 sm:mt-16 flex lg:flex-nowrap sm:flex-wrap xl:gap-4 lg:gap-1 sm:gap-4 lg:justify-between md:justify-center md:gap-8">
         {products.map((product, i) => (
           <ProductCard
             key={i}
