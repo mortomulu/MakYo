@@ -6,7 +6,8 @@ export default function MessageForm() {
     "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[38px] md:w-[185px] sm:w-[400px]";
   const defaultBordertextArea =
     "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[100px] md:w-[185px] sm:w-[400px]";
-  const errorBorder = "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] md:w-[185px] sm:w-[400px] h-[38px]";
+  const errorBorder =
+    "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] md:w-[185px] sm:w-[400px] h-[38px]";
   const errorBordertextArea =
     "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] md:w-[185px] sm:w-[400px] h-[100px]";
 
@@ -36,7 +37,10 @@ export default function MessageForm() {
         {() => (
           <Form className="w-fit">
             <div className="flex-col flex">
-              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="name">
+              <label
+                className="mt-4 lg:text-2xl md:text-xl font-lexend-deca"
+                htmlFor="name"
+              >
                 Name
               </label>
               <Field type="text" name="name">
@@ -49,7 +53,10 @@ export default function MessageForm() {
               </Field>
             </div>
             <div className="flex-col flex">
-              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="email">
+              <label
+                className="mt-4 lg:text-2xl md:text-xl font-lexend-deca"
+                htmlFor="email"
+              >
                 Email
               </label>
               <Field type="text" name="email">
@@ -62,7 +69,10 @@ export default function MessageForm() {
               </Field>
             </div>
             <div className="flex-col flex">
-              <label className="mt-4 lg:text-2xl md:text-xl font-lexend-deca" htmlFor="message">
+              <label
+                className="mt-4 lg:text-2xl md:text-xl font-lexend-deca"
+                htmlFor="message"
+              >
                 Massage
               </label>
               <Field type="text" name="message">

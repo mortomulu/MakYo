@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Products() {
   const [products, setProducts] = useState([]);
 
-  const url = import.meta.env.VITE_BASE_URL;
+  const url = "https://dummyjson.com/products?limit=4";
 
   const postQuery = useQuery({
     queryKey: ["posts"],
