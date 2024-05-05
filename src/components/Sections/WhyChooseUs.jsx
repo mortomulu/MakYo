@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
           image={orderOnline}
           title={"order online"}
           desc={"melakukan pesanan secara online tanpa harus datang"}
-          style={'2xl:mt-0 xl:mt-[20px] xl:w-auto lg:w-150 sm:mx-auto lg:h-[177px]'}
+          style={'2xl:mt-0 xl:mt-0 xl:w-auto lg:w-150 sm:mx-auto lg:h-[177px]'}
         />
         <ServiceCard
           image={onlinePayment}

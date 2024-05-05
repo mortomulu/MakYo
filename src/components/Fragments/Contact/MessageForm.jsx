@@ -6,9 +6,9 @@ export default function MessageForm() {
     "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[38px] md:w-[185px] sm:w-[400px]";
   const defaultBordertextArea =
     "mt-2 border-2 border-border-color rounded xl:w-[323px] lg:w-[273px] h-[100px] md:w-[185px] sm:w-[400px]";
-  const errorBorder = "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] h-[38px]";
+  const errorBorder = "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] md:w-[185px] sm:w-[400px] h-[38px]";
   const errorBordertextArea =
-    "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] h-[100px]";
+    "mt-2 border-2 border-red-500 rounded xl:w-[323px] lg:w-[273px] md:w-[185px] sm:w-[400px] h-[100px]";
 
   return (
     <div>
